@@ -187,7 +187,7 @@ func patchGame(ndsFile string) error {
 	}
 
 	// Check if patching was successful
-	outputFile := fmt.Sprintf("game(d.errexe.xyz).nds")
+	outputFile := fmt.Sprintf("game (d.errexe.xyz).nds")
 	if _, err := os.Stat("./tmp/" + outputFile); err == nil {
 		err = os.Rename("./tmp/"+outputFile, "./output.nds")
 		if err != nil {
